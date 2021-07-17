@@ -2,8 +2,8 @@ from tkinter import *
 from chatbotv9 import get_response
 
 BG_GRAY = "#ABB2B9"
-BG_COLOR = "#17202A"
-TEXT_COLOR = "#EAECEE"
+BG_COLOR = "#EEEEEE"
+TEXT_COLOR = "#393E46"
 
 FONT = "Helvetica 14"
 FONT_BOLD = "Helvetica 13 bold"
