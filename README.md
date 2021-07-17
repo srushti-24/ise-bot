@@ -10,7 +10,7 @@ For the chat application to run following packages needs to be installed in the 
 5. html5lib
 6. nltk
 
-Following comman launches the chatbot window
+Following command launches the chatbot window
 
 $ python app.py
 
