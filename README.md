@@ -11,4 +11,5 @@ For the chat application to run following packages needs to be installed in the 
 6. nltk
 
 Following comman launches the chatbot window
+
 $ python app.py
