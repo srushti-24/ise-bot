@@ -7,7 +7,7 @@ TEXT_COLOR = "#EAECEE"
 
 FONT = "Helvetica 14"
 FONT_BOLD = "Helvetica 13 bold"
-bot_name = "My Integrated Bot"
+bot_name = "ISE Bot"
 class ChatApplication:
     
     def __init__(self):
