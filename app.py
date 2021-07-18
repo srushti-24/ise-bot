@@ -1,5 +1,5 @@
 from tkinter import *
-from chatbotv9 import get_response
+from chatbotv9 import get_response, initiate_chat
 
 BG_GRAY = "#ABB2B9"
 BG_COLOR = "#EEEEEE"
@@ -51,6 +51,13 @@ class ChatApplication:
         self.msg_entry.place(relwidth=0.74, relheight=0.06, rely=0.008, relx=0.011)
         self.msg_entry.focus()
         self.msg_entry.bind("<Return>", self._on_enter_pressed)
+
+        initialMsg = f"{bot_name}: {initiate_chat()}\n\n"
+        self.text_widget.configure(state=NORMAL)
+        self.text_widget.insert(END, initialMsg)
+        self.text_widget.configure(state=DISABLED)
+        
+        self.text_widget.see(END)
         
         # send button
         send_button = Button(bottom_label, text="Send", font=FONT_BOLD, width=20, bg=BG_GRAY,
